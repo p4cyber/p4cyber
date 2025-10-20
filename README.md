@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="media/P4Cyber_W.png">
     <source media="(prefers-color-scheme: light)" srcset="media/P4Cyber.png">
-   <img src="media/P4Cyber.png" alt="P4Cyber Logo" width="300"/>
+   <img src="media/P4Cyber.png" alt="P4Cyber Logo" width="600"/>
   </picture>
 </p>
 
