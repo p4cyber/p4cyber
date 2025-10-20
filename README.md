@@ -6,13 +6,13 @@
   </picture>
 </p>
 
-# **P4Cyber**
-
-**Peers for Cyber**
+# **P4Cyber** - **Peers for Cyber**
 
 *Unstoppable · Decentralized · Neutral - CYBER INTELLIGENCE*
 
-A decentralized, verifiable, and unstoppable layer for Internet-wide cyber intelligence — **built on [Pears](https://docs.pears.com/) by [Holepunch](https://holepunch.to/)**.
+A decentralized, verifiable, and unstoppable layer for Internet-wide cyber intelligence 
+
+**built on [Pears](https://docs.pears.com/) by [Holepunch](https://holepunch.to/)**.
 
 ---
 
