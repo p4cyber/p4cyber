@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="media/logo_white.png">
+    <source media="(prefers-color-scheme: light)" srcset="media/P4Cyber.png">
+   <img src="media/P4Cyber.png" alt="P4Cyber Logo" width="300"/>
+  </picture>
+</p>
+
 # **P4Cyber**
 
 **Peers for Cyber**
