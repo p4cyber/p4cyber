@@ -210,3 +210,16 @@ A: Report issues in the repository’s Issues or Discussions (if enabled), and i
 
 Important legal notice: This FAQ is informational and not legal advice. Testers must ensure they comply with local laws and their service providers’ terms of service.
 
+---
+
+### License & Reverse-Engineering Notice (Alpha)
+
+The P4Cyber alpha client is provided for testing purposes only and is considered **proprietary software** for the duration of the alpha. The definitive licensing model (including any open-source components) will be announced when we enter the beta release.
+
+By participating in this alpha test, you are requested to refrain from:
+- reverse engineering, decompiling, disassembling, or attempting to recover source code;
+- copying, modifying, redistributing, or creating derivative works from the alpha binaries or packages;
+- using the software in ways that violate applicable laws or your provider’s terms of service.
+
+If you have questions or need explicit permission (for example for integration/testing purposes), please contact us.
+
