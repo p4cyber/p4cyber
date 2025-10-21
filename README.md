@@ -171,7 +171,9 @@ There is no central database: all data is distributed and accessible by peers ac
 
 This alpha is experimental: updates may be frequent and not always announced. On restart the client will attempt to run the latest published version available to alpha participants.
 
-**4) FAQ**
+---
+
+## **4) FAQ**
 
 **Q: Is the alpha performing port scanning?**
 A: The alpha performs systematic, non-targeted scans over randomized IP blocks and prioritized port lists for testing algorithmic behavior — not focused attacks against single targets. The operation is similar in nature to what organizations like Shadowserver and Shodan do at scale, but limited in scope for this alpha.
