@@ -87,9 +87,11 @@ In parallel, the platform will evolve beyond surface scanning toward a complete 
 
 Optionally, as part of this roadmap, we may provide **decentralized VPN tooling** to bolster jurisdictional resilience — a capability relevant not only to P4Cyber’s operations but also to broader efforts that safeguard neutrality and freedom of expression online.
 
+---
+
 ## **P4Cyber Alpha**
 
-This section describes the current alpha test for P4Cyber. Note that the alpha is experimental and is intended to validate algorithms, peer coordination via Pears, and the use of Hypercore/Hyperbee data structures for decentralized storage and search. The alpha does not include open-source scanning code — it provides instructions for testers to install Pears, run the P4Cyber application, and participate in a controlled test network.
+This section describes the current alpha test for P4Cyber. Note that **the alpha is experimental** and is intended to validate algorithms, peer coordination via Pears, and the use of Hypercore/Hyperbee data structures for decentralized storage and search. The alpha does not include open-source scanning code — it provides instructions for testers to install Pears, run the P4Cyber application, and participate in a controlled test network.
 
 **1) What it is**
 
@@ -113,17 +115,17 @@ Limited distribution of nodes: since the network size is small, coverage is inte
 
 The P4Cyber GUI is required for participating in the alpha. Through the interface you can:
 
-Set bandwidth allowance for the node (to avoid saturating local network).
+**Set bandwidth allowance** for the node (to avoid saturating local network).
 
-Start / Stop scanning sessions manually.
+**Start / Stop scanning** sessions manually.
 
-Search gathered results via a textual search bar (IP address only).
+**Search gathered results** via a textual search bar (IP address only).
 
-Browse results in a Shodan-like view showing: discovered ports, protocols, banners, and certificates.
+**Browse results** in a Shodan-like view showing: discovered ports, protocols, banners, and certificates.
 
-View scanning metrics: how many blocks the node scanned. In this alpha a block corresponds to scanning a single port across ~300,000 IPs. Metrics are available per-session and historically (since the app was first run on that node).
+**View scanning metrics**: how many blocks the node scanned. In this alpha a block corresponds to scanning a single port across ~300,000 IPs. Metrics are available per-session and historically (since the app was first run on that node).
 
-Inspect last-block details: view the data captured for the most recent block scanned by the node.
+**Inspect last-block details**: view the data captured for the most recent block scanned by the node.
 
 Limitations and scope:
 
