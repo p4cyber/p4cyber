@@ -8,7 +8,9 @@
 
 # **P4Cyber** - **Peers for Cyber**
 
-*Unstoppable · Decentralized · Neutral - CYBER INTELLIGENCE*
+Unstoppable · Decentralized · Neutral 
+
+**CYBER INTELLIGENCE**
 
 A decentralized, verifiable, and unstoppable layer for Internet-wide cyber intelligence 
 
