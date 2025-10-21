@@ -87,3 +87,122 @@ In parallel, the platform will evolve beyond surface scanning toward a complete 
 
 Optionally, as part of this roadmap, we may provide **decentralized VPN tooling** to bolster jurisdictional resilience — a capability relevant not only to P4Cyber’s operations but also to broader efforts that safeguard neutrality and freedom of expression online.
 
+## **P4Cyber Alpha**
+
+This section describes the current alpha test for P4Cyber. Note that the alpha is experimental and is intended to validate algorithms, peer coordination via Pears, and the use of Hypercore/Hyperbee data structures for decentralized storage and search. The alpha does not include open-source scanning code — it provides instructions for testers to install Pears, run the P4Cyber application, and participate in a controlled test network.
+
+**1) What it is**
+
+P4Cyber Alpha is an early, limited test of the peer-driven scanning and data-replication model. It is not intended to produce a complete Internet-wide index. Instead, it validates core ideas:
+
+Running a P4Cyber node (client or server) that connects to the P2P fabric provided by Pears by Holepunch.
+
+Using Hypercore / Hyperbee for append-only feeds and decentralized searchable repositories across peers.
+
+Exercising distributed scan scheduling, result replication, and decentralized search — all without a central database.
+
+Key constraints of the alpha:
+
+No open-source scanning backend shipped in this repo; the alpha delivers a packaged client for testing.
+
+Limited port scope: the alpha scans ~5,000 common ports (the primary ports) — not full 0-65535 coverage.
+
+Limited distribution of nodes: since the network size is small, coverage is intentionally partial and results are for testing only.
+
+**2) What you can test**
+
+The P4Cyber GUI is required for participating in the alpha. Through the interface you can:
+
+Set bandwidth allowance for the node (to avoid saturating local network).
+
+Start / Stop scanning sessions manually.
+
+Search gathered results via a textual search bar (IP address only).
+
+Browse results in a Shodan-like view showing: discovered ports, protocols, banners, and certificates.
+
+View scanning metrics: how many blocks the node scanned. In this alpha a block corresponds to scanning a single port across ~300,000 IPs. Metrics are available per-session and historically (since the app was first run on that node).
+
+Inspect last-block details: view the data captured for the most recent block scanned by the node.
+
+Limitations and scope:
+
+Results are incomplete by design and only representative of the current alpha network.
+
+Scans are constrained to ~5,000 prioritized ports.
+
+Reproducibility and proofs are being evaluated; some fields or features may be placeholders during alpha.
+
+**3) Install & Run**
+
+Supported OS: Linux 64-bit and Windows 64-bit. No specific distribution or version is required beyond these architectures.
+
+Prerequisites: a machine (server or desktop) with a GUI environment and sufficient network/bandwidth. Mobile clients are not part of this alpha.
+
+**1) Install Pears**
+Follow official Pears installation instructions: https://docs.pears.com/
+
+**2) Start (obtain & run)**
+The alpha uses Pears’ runtime to obtain and run the application in a single step. Open a terminal and run:
+
+pear run <P4CYBER_KEY>
+
+Replace <P4CYBER_KEY> with the application key distributed to alpha testers.
+
+pear run will download the latest release associated with that key and execute it — there is no separate manual download step.
+
+The command launches the Pears runtime and starts the P4Cyber GUI. The GUI must be running to participate in scanning and to control node settings.
+
+**3) Configure bandwidth and run scans**
+
+In the GUI, set a conservative bandwidth limit before starting. We recommend beginning with a low value and increasing gradually while observing local network impact.
+
+Use the GUI buttons to Start and Stop scans.
+
+**4) Data and storage**
+
+The application stores its local append-only logs and Hypercore/Hyperbee feeds on the node. Data is replicated across peers per Pears’ protocol.
+
+There is no central database: all data is distributed and accessible by peers according to the protocol and feed metadata.
+
+**5) Updates**
+
+This alpha is experimental: updates may be frequent and not always announced. On restart the client will attempt to run the latest published version available to alpha participants.
+
+**4) FAQ**
+
+**Q: Is the alpha performing port scanning?**
+A: The alpha performs systematic, non-targeted scans over randomized IP blocks and prioritized port lists for testing algorithmic behavior — not focused attacks against single targets. The operation is similar in nature to what organizations like Shadowserver and Shodan do at scale, but limited in scope for this alpha.
+
+**Q: Is this legal to run?**
+A: Laws and ISP terms vary by jurisdiction. Running distributed scanning may be restricted by some ISPs, cloud providers, or national laws. P4Cyber provides this alpha for research and testing; testers are responsible for ensuring compliance with local laws and provider terms. We recommend verifying terms with your ISP or provider and using a VPN or other mitigations if you deem it necessary.
+
+**Q: Can the scans overload my network?**
+A: Yes — if bandwidth is set too high. The GUI provides a bandwidth control: start low and increase gradually. Do not set values that saturate your uplink. If you notice network issues, stop the scan immediately.
+
+**Q: Will my node reveal my identity or correlate scans to my organization?**
+A: The alpha is designed to operate on randomized IP blocks rather than targeting specific organizations. However, network-level identifiers (source IP) are present in traffic and may be visible to network operators. Use your discretion and consult legal/IT counsel if required.
+
+**Q: Where are the data stored and who controls them?**
+A: Data is stored in decentralized feeds (Hypercore/Hyperbee) across participating peers via Pears. There is no central authority holding all data. Access to feeds is governed by the protocol and feed metadata.
+
+**Q: Why no open-source code in this alpha?**
+A: The alpha is distributed as a packaged client to simplify onboarding and protect early-stage internals during testing. Project goals remain aligned with openness — we will evaluate what will be published after the alpha depending on security, safety, and operational considerations.
+
+**Q: Is a GUI mandatory?**
+A: Yes for alpha participation. The GUI exposes the controls and metrics required for safe testing (bandwidth limit, scanning control, search, and metrics).
+
+**Q: Are there safety or ethical controls built-in?**
+A: The alpha includes rate-limiting, randomized block assignments, and protocols to avoid repeated concentrated scans against a single network. These mechanisms are under active testing and refinement.
+
+**Q: What should I do if I encounter problems?**
+A: Report issues in the repository’s Issues or Discussions (if enabled), and include:
+
+- OS and environment
+
+- Pears version
+
+- Steps to reproduce
+
+Important legal notice: This FAQ is informational and not legal advice. Testers must ensure they comply with local laws and their service providers’ terms of service.
+
