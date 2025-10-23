@@ -123,7 +123,7 @@ The P4Cyber GUI is required for participating in the alpha. Through the interfac
 
 **Browse results** in a Shodan-like view showing: discovered ports, protocols, banners, and certificates.
 
-**View scanning metrics**: how many blocks the node scanned. In this alpha a block corresponds to scanning a single port across ~300,000 IPs. Metrics are available per-session and historically (since the app was first run on that node).
+**View scanning metrics**: how many blocks the node scanned. In this alpha a block corresponds to scanning a single port across ~600,000 IPs. Metrics are available per-session and historically (since the app was first run on that node).
 
 **Inspect last-block details**: view the data captured for the most recent block scanned by the node.
 
