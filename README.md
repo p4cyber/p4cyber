@@ -152,11 +152,9 @@ Follow official Pears installation instructions: https://docs.pears.com/
 
 **2) Start (obtain & run)**
 The alpha uses Pears’ runtime to obtain and run the application in a single step. Open a terminal and run:
-
-pear run <P4CYBER_KEY>
-
-Replace <P4CYBER_KEY> with the application key distributed to alpha testers.
-
+```bash
+pear run pear://r55npmprtr5789n97e5km6puwoopqb6y3kre4o4cu786ii7fcrto  
+```
 pear run will download the latest release associated with that key and execute it — there is no separate manual download step.
 
 The command launches the Pears runtime and starts the P4Cyber GUI. The GUI must be running to participate in scanning and to control node settings.
