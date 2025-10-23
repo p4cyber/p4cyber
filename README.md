@@ -93,6 +93,12 @@ Optionally, as part of this roadmap, we may provide **decentralized VPN tooling*
 
 This section describes the current alpha test for P4Cyber. Note that **the alpha is experimental** and is intended to validate algorithms, peer coordination via Pears, and the use of Hypercore/Hyperbee data structures for decentralized storage and search. The alpha does not include open-source scanning code — it provides instructions for testers to install Pears, run the P4Cyber application, and participate in a controlled test network.
 
+**Scanning Engine Note**
+
+P4Cyber leverages proven open-source components for its experimental scanning layer.  
+In particular, the alpha client integrates [masscan](https://github.com/robertdavidgraham/masscan) — the fastest Internet-scale port scanner — as part of its modular scanning backend, with additional orchestration, reproducibility, and peer-coordination layers built on top of it.
+
+
 **1) What it is**
 
 P4Cyber Alpha is an early, limited test of the peer-driven scanning and data-replication model. It is not intended to produce a complete Internet-wide index. Instead, it validates core ideas:
@@ -136,10 +142,6 @@ Scans are constrained to ~5,000 prioritized ports.
 Reproducibility and proofs are being evaluated; some fields or features may be placeholders during alpha.
 
 **3) Install & Run**
-
-### Scanning Engine Note
-P4Cyber leverages proven open-source components for its experimental scanning layer.  
-In particular, the alpha client integrates [masscan](https://github.com/robertdavidgraham/masscan) — the fastest Internet-scale port scanner — as part of its modular scanning backend, with additional orchestration, reproducibility, and peer-coordination layers built on top of it.
 
 Supported OS: Linux 64-bit and Windows 64-bit. No specific distribution or version is required beyond these architectures.
 
