@@ -143,7 +143,7 @@ Reproducibility and proofs are being evaluated; some fields or features may be p
 
 **3) Install & Run**
 
-Supported OS: Linux 64-bit and Windows 64-bit. No specific distribution or version is required beyond these architectures.
+**Supported OS: Linux 64-bit and Windows 64-bit.** No specific distribution or version is required beyond these architectures.
 
 Prerequisites: a machine (server or desktop) with a GUI environment and sufficient network/bandwidth. Mobile clients are not part of this alpha.
 
