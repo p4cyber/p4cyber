@@ -137,6 +137,10 @@ Reproducibility and proofs are being evaluated; some fields or features may be p
 
 **3) Install & Run**
 
+### Scanning Engine Note
+P4Cyber leverages proven open-source components for its experimental scanning layer.  
+In particular, the alpha client integrates [masscan](https://github.com/robertdavidgraham/masscan) — the fastest Internet-scale port scanner — as part of its modular scanning backend, with additional orchestration, reproducibility, and peer-coordination layers built on top of it.
+
 Supported OS: Linux 64-bit and Windows 64-bit. No specific distribution or version is required beyond these architectures.
 
 Prerequisites: a machine (server or desktop) with a GUI environment and sufficient network/bandwidth. Mobile clients are not part of this alpha.
